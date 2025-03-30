@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THR LEBARAN!!!</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        #sensor {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                #4CAF50,
+                #4CAF50 20px,
+                #FFD700 20px,
+                #FFD700 40px
+            );
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 9999;
+            text-shadow: 2px 2px 4px black;
+        }
+        video {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sensor" onclick="startVideo()">Klik untuk THR! - Selamat Lebaran! 🌙✨</div>
+    <h2>SELAMAT ANDA KENA RICK ROLL</h2>
+    <video id="myVideo" width="640" height="360" controls>
+        <source src="Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" type="video/mp4">
+        Browser Anda tidak mendukung pemutaran video.
+    </video>
+    <h2>AWOKAWOKAWOK</h2>
+    
+    <script>
+        function startVideo() {
+            let sensor = document.getElementById("sensor");
+            let video = document.getElementById("myVideo");
+            sensor.style.display = "none";
+            video.play();
+        }
+    </script>
+</body>
+</html>
